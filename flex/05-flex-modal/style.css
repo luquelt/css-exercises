@@ -5,6 +5,7 @@ html, body {
 }
 
 body {
+  /* This selector centers everything in the middle of the page */
   font-family: Roboto, sans-serif;
   margin: 0;
   background: #aaa;
@@ -16,13 +17,32 @@ body {
 }
 
 .modal {
+  display: flex;
   background: white;
+  gap: 16px;
+  padding: 16px;
+
+
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
 
+
+.header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-weight: bold;
+font-size: 18px;
+display: flex;
+margin-bottom: 8px;    
+
+}
+
 .icon {
+  flex-shrink: 0;
+
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -48,9 +68,18 @@ body {
   justify-content: center;
 }
 
+.text{
+  align-self: center;
+
+  margin-bottom: 16px;
+
+}
+
+
 button {
   padding: 8px 16px;
   border-radius: 8px;
+  margin-top: 10px;
 }
 
 button.continue {
